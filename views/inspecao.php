@@ -479,10 +479,49 @@
             </tr>
             <tr>
                  <td>
-                    4.5
+                    4.6
                  </td>
                  <td>
-                     Utiliza sistema de proteção contra quedas (cinturão e trava quedas completo).
+                    Utiliza sistema de proteção contra quedas <br> (cinturão e trava quedas completo).
+                 <td>
+                     <input type="radio" name="sim" id="idSim" value="Sim">
+                         <label>Sim</label>
+                     <input type="radio" name="nao" id="idNao" value="Não">
+                         <label>Não</label>
+                 </td>
+                <td> 
+                    <input type="text">
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                 <td>
+                    4.7
+                 </td>
+                 <td>
+                    Utiliza roupa de trabalho adequada para a atividade em bom estado de conservação.
+                 <td>
+                     <input type="radio" name="sim" id="idSim" value="Sim">
+                         <label>Sim</label>
+                     <input type="radio" name="nao" id="idNao" value="Não">
+                         <label>Não</label>
+                 </td>
+                <td> 
+                    <input type="text">
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+
+            <tr>
+                 <td>
+                    4.8
+                 </td>
+                 <td>
+                 Utiliza óculos de proteção, conforme <br> atividade, em bom estado de conservação.
                  <td>
                      <input type="radio" name="sim" id="idSim" value="Sim">
                          <label>Sim</label>
