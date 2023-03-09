@@ -30,7 +30,7 @@
         <a href="#">
             <li>Formulários
             <ul >
-                <li><a href="../views/inspecao.php">Formulário IPAL</a></li>
+                <li><a href="../controllers/UsuarioController.php?action=CarregarForm">Formulário IPAL</a></li>
                 <li><a href="#">Relato de Perigo</a></li>
                 <li><a href="#">APR Gravada</a></li>
                 <li><a href="#">Check List Veículo</a></li>

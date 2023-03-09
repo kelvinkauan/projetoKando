@@ -117,7 +117,17 @@
             }
         
         }
-        
+        private function CarregarForm(string $msg =null){
+
+            if($_SESSION["Logado"] == true){
+                $dadosUser = new UsuarioRepository();
+                $usuario= $dadosUser->findUserById();
+                $data['usuario'] = $usuario; 
+
+
+                $this->loadView("inspecao.php", $data, $msg);
+            }
+        }
        
 
 

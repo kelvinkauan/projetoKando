@@ -25,8 +25,7 @@
     </div>
       <div class="form-container sign-in-container">
       <form action="./UsuarioController.php?action=login" method="POST">
-        <!-- ./OrganizadorController.php?action=login or ./AdministradorController.php?action=login  or ./LadingController.php?action=login-->
-        <h1>Faça Login</h1>
+                <h1>Faça Login</h1>
         <input type="text" name="username" placeholder="User name" required />
         <input type="password" name="senha" placeholder="Senha" required />
         <button type="submit" value="login">Entrar</button>
@@ -50,6 +49,7 @@
   </div>
     
   <script src="../views/login/Stylelogin/login.js"  charset="utf-8"></script>
+
 </body>
 
 
