@@ -32,16 +32,16 @@
                 1.1
             </td>
             <td>
-                Desligar a(s) fonte(s) de tensão
+                Desligar a(s) fonte(s) de tensão 
             </td>
             <td>
-                <input type="checkbox" name="fooby[1][]" id="idSim" value="Sim" class="escolha" >
+                <input type="checkbox" name="group[1][]" id="idSim" value="Sim" class="escolha" >
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[1][]" id="idNao" value="Não" class="escolha" >
+                <input type="checkbox" name="group[1][]" id="idNao" value="Não" class="escolha" >
                          <label>Não</label>
             </td>
             <td>
-                <input type="checkbox" name="fooby[1][]" id="idNa">
+                <input type="checkbox" name="group[1][]" id="idNa">
             </td>
             <td>
                 <input type="text" name="observacoes" id="idObs">
@@ -55,13 +55,13 @@
                 Impedimento da reenergização (bloqueio)
             </td>
             <td>
-                <input type="checkbox" name="fooby[2][]" id="idSim" value="Sim" class="tlo" >
+                <input type="checkbox" name="group[2][]" id="idSim" value="Sim" class="tlo" >
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[2][]" id="idNao" value="Não" class="tlo" >
+                <input type="checkbox" name="group[2][]" id="idNao" value="Não" class="tlo" >
                          <label>Não</label>
             </td>
             <td>
-            <input type="checkbox" name="fooby[2][]" id="idNa">
+            <input type="checkbox" name="group[2][]" id="idNa">
             </td>
             <td>
                 <input type="text" name="observacoes" id="idObs">
@@ -74,13 +74,13 @@
             <td>
                 Constatar a ausência de tensão</td>
             <td>
-                <input type="checkbox" name="fooby[3][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[3][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[3][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[3][]" id="idNao" value="Não">
                          <label>Não</label>
             </td>
             <td>
-            <input type="checkbox" name="fooby[3][]" id="idNa">
+            <input type="checkbox" name="group[3][]" id="idNa">
             </td>
             <td>
                 <input type="text" name="observacoes" id="idObs">
@@ -94,13 +94,13 @@
                 Aterrar o sistema elétrico e curtocircuitar
              </td>
             <td>
-                <input type="checkbox" name="fooby[4][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[4][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[4][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[4][]" id="idNao" value="Não">
                          <label>Não</label>
             </td>
             <td>
-            <input type="checkbox" name="fooby[4][]" id="idNa">
+            <input type="checkbox" name="group[4][]" id="idNa">
             </td>
             <td>
                 <input type="text" name="observacoes" id="idObs">
@@ -114,13 +114,13 @@
                 Sinalizar a zona de trabalho
             </td>
             <td>
-                <input type="checkbox" name="fooby[5][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[5][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[5][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[5][]" id="idNao" value="Não">
                          <label>Não</label>
             </td>
             <td>
-            <input type="checkbox" name="fooby[5][]" id="idNa">
+            <input type="checkbox" name="group[5][]" id="idNa">
             </td>
             <td>
                 <input type="text" name="observacoes" id="idObs">
@@ -149,13 +149,13 @@
                 Existe cartão de liberação de circuitos (SE)        
             </td>
             <td>
-                <input type="checkbox" name="fooby[6][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[6][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[6][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[6][]" id="idNao" value="Não">
                          <label>Não</label>
             </td>
             <td>
-            <input type="checkbox" name="fooby[6][]" id="Na">
+            <input type="checkbox" name="group[6][]" id="Na">
             </td>
             <td>
                 <input type="text" name="observacoes" id="idObs">
@@ -169,13 +169,13 @@
                  Possui cartão de segurança pessoal (SE)
             </td>
             <td>
-                <input type="checkbox" name="fooby[7][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[7][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[7][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[7][]" id="idNao" value="Não">
                          <label>Não</label>
             </td>
             <td>
-            <input type="checkbox" name="fooby[7][]" id="Na">
+            <input type="checkbox" name="group[7][]" id="Na">
             </td>
             <td>
                 <input type="text" name="observacoes" id="idObs">
@@ -189,13 +189,13 @@
                 Possui número da chave a ser manobrada,<br> fornecido pelo centro de operação
             </td>
             <td>
-                <input type="checkbox" name="fooby[8][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[8][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[8][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[8][]" id="idNao" value="Não">
                          <label>Não</label>
             </td>
             <td>
-            <input type="checkbox" name="fooby[8][]" id="Na">
+            <input type="checkbox" name="group[8][]" id="Na">
             </td>
             <td>
                 <input type="text" name="observacoes" id="idObs">
@@ -223,14 +223,14 @@
                      Está com a ordem de trabalho
                  </td>
                 <td>
-                <input type="checkbox" name="fooby[9][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[9][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[9][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[9][]" id="idNao" value="Não">
                          <label>Não</label>
             </td>
                  </td>
                 <td>
-                <input type="checkbox" name="fooby[9][]" id="Na">
+                <input type="checkbox" name="group[9][]" id="Na">
             </td>
             <td>
                 <input type="text" name="observacoes" id="idObs">
@@ -244,14 +244,14 @@
                     O(s) nome(s) do(s) empregado(s) está(ão) <br> na ordem de trabalho
                  </td>
                 <td>
-                <input type="checkbox" name="fooby[10][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[10][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[10][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[10][]" id="idNao" value="Não">
                          <label>Não</label>
             </td>
                  </td>
                 <td>
-                <input type="checkbox" name="fooby[10][]" id="Na">
+                <input type="checkbox" name="group[10][]" id="Na">
             </td>
             <td>
                 <input type="text" name="observacoes" id="idObs">
@@ -265,14 +265,14 @@
                     Cumpre com o procedimento de trabalho e <br> as normas técnicas     
                 </td>
                 <td>
-                <input type="checkbox" name="fooby[11][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[11][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[11][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[11][]" id="idNao" value="Não">
                          <label>Não</label>
             </td>
                  </td>
                 <td>
-                <input type="checkbox" name="fooby[11][]" id="Na">
+                <input type="checkbox" name="group[11][]" id="Na">
             </td>
             <td>
                 <input type="text" name="observacoes" id="idObs">
@@ -286,14 +286,14 @@
                     Possui procedimento vigente e disponível <br> para a atividade executada.  
                 </td>
                 <td>
-                <input type="checkbox" name="fooby[12][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[12][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[12][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[12][]" id="idNao" value="Não">
                          <label>Não</label>
             </td>
                  </td>
                 <td>
-                <input type="checkbox" name="fooby[12][]" id="Na">
+                <input type="checkbox" name="group[12][]" id="Na">
             </td>
             <td>
                 <input type="text" name="observacoes" id="idObs">
@@ -308,14 +308,14 @@
                     Dispõe de unifilares ou croquis das instalações.
                 </td>
                 <td>
-                <input type="checkbox" name="fooby[13][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[13][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[13][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[13][]" id="idNao" value="Não">
                          <label>Não</label>
             </td>
                  </td>
                 <td>
-                <input type="checkbox" name="fooby[13][]" id="Na">
+                <input type="checkbox" name="group[13][]" id="Na">
             </td>
             <td>
                 <input type="text" name="observacoes" id="idObs">
@@ -344,14 +344,14 @@
                     Utiliza capacete de segurança com carneira e jugular <br> em bom estado de conservação.
                 </td>
                 <td>
-                <input type="checkbox" name="fooby[14][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[14][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[14][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[14][]" id="idNao" value="Não">
                          <label>Não</label>
             </td>
                  </td>
                 <td>
-                <input type="checkbox" name="fooby[14][]" id="Na">
+                <input type="checkbox" name="group[14][]" id="Na">
             </td>
             <td>
                 <input type="text" name="observacoes" id="idObs">
@@ -365,14 +365,14 @@
                     Utiliza calçado de segurança em bom <br> estado de conservação.
                 </td>
                 <td>
-                <input type="checkbox" name="fooby[15][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[15][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[15][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[15][]" id="idNao" value="Não">
                          <label>Não</label>
             </td>
                  </td>
                 <td>
-                <input type="checkbox" name="fooby[15][]" id="Na">
+                <input type="checkbox" name="group[15][]" id="Na">
             </td>
             <td>
                 <input type="text" name="observacoes" id="idObs">
@@ -386,14 +386,14 @@
                     Utiliza luvas de (vaqueta, pelica, etc) de <br> acordo com a atividade, em bom estado de conservação.
                 </td>
                 <td>
-                <input type="checkbox" name="fooby[16][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[16][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[16][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[16][]" id="idNao" value="Não">
                          <label>Não</label>
             </td>
                  </td>
                 <td>
-                <input type="checkbox" name="fooby[16][]" id="Na">
+                <input type="checkbox" name="group[16][]" id="Na">
             </td>
             <td>
                 <input type="text" name="observacoes" id="idObs">
@@ -407,14 +407,14 @@
                     Utiliza luvas isolantes (BT/AT) conforme atividade,<br> em bom estado de conservação.
                 </td>
                 <td>
-                <input type="checkbox" name="fooby[17][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[17][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[17][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[17][]" id="idNao" value="Não">
                          <label>Não</label>
             </td>
                  </td>
                 <td>
-                <input type="checkbox" name="fooby[17][]" id="Na">
+                <input type="checkbox" name="group[17][]" id="Na">
             </td>
             <td>
                 <input type="text" name="observacoes" id="idObs">
@@ -428,14 +428,14 @@
                     Utiliza protetor facial em bom estado de conservação.
                  </td>
                 <td>
-                <input type="checkbox" name="fooby[18][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[18][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[18][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[18][]" id="idNao" value="Não">
                          <label>Não</label>
             </td>
                  </td>
                 <td>
-                <input type="checkbox" name="fooby[18][]" id="Na">
+                <input type="checkbox" name="group[18][]" id="Na">
             </td>
             <td>
                 <input type="text" name="observacoes" id="idObs">
@@ -449,14 +449,14 @@
                     Utiliza sistema de proteção contra quedas <br> (cinturão e trava quedas completo).
                  </td>
                 <td>
-                <input type="checkbox" name="fooby[19][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[19][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[19][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[19][]" id="idNao" value="Não">
                          <label>Não</label>
             </td>
                  </td>
                 <td>
-                <input type="checkbox" name="fooby[19][]" id="Na">
+                <input type="checkbox" name="group[19][]" id="Na">
             </td>
             <td>
                 <input type="text" name="observacoes" id="idObs">
@@ -470,14 +470,14 @@
                     Utiliza roupa de trabalho adequada  <br> para a atividade em bom estado de conservação.
                  </td>
                 <td>
-                <input type="checkbox" name="fooby[20][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[20][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[20][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[20][]" id="idNao" value="Não">
                          <label>Não</label>
             </td>
                  </td>
                 <td>
-                <input type="checkbox" name="fooby[20][]" id="Na">
+                <input type="checkbox" name="group[20][]" id="Na">
             </td>
             <td>
                 <input type="text" name="observacoes" id="idObs">
@@ -492,14 +492,14 @@
                  Utiliza óculos de proteção, conforme <br> atividade, em bom estado de conservação.
                  </td>
                 <td>
-                <input type="checkbox" name="fooby[21][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[21][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[21][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[21][]" id="idNao" value="Não">
                          <label>Não</label>
             </td>
                  </td>
                 <td>
-                <input type="checkbox" name="fooby[21][]" id="Na">
+                <input type="checkbox" name="group[21][]" id="Na">
             </td>
             <td>
                 <input type="text" name="observacoes" id="idObs">
@@ -514,14 +514,14 @@
                     Utiliza protetores auriculares em bom estado de conservação.
                  </td>
                 <td>
-                <input type="checkbox" name="fooby[22][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[22][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[22][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[22][]" id="idNao" value="Não">
                          <label>Não</label>
             </td>
                  </td>
                 <td>
-                <input type="checkbox" name="fooby[22][]" id="Na">
+                <input type="checkbox" name="group[22][]" id="Na">
             </td>
             <td>
                 <input type="text" name="observacoes" id="idObs">
@@ -535,14 +535,14 @@
                      O refletivo do uniforme ou colete refletivo <br> encontra-se em bom estado de conservação.
                  </td>
                 <td>
-                <input type="checkbox" name="fooby[23][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[23][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[23][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[23][]" id="idNao" value="Não">
                          <label>Não</label>
             
                  </td>
                 <td>
-                <input type="checkbox" name="fooby[23][]" id="Na">
+                <input type="checkbox" name="group[23][]" id="Na">
             </td>
             <td>
                 <input type="text" name="observacoes" id="idObs">
@@ -556,14 +556,14 @@
                      Utiliza mangas isolantes, de acordo com <br> atividade em bom estado de conservação.
                  </td>   
                 <td>
-                <input type="checkbox" name="fooby[24][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[24][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[24][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[24][]" id="idNao" value="Não">
                          <label>Não</label>
         
                  </td>
                 <td>
-                <input type="checkbox" name="fooby[24][]" id="Na">
+                <input type="checkbox" name="group[24][]" id="Na">
             </td>
             <td>
                 <input type="text" name="observacoes" id="idObs">
@@ -578,14 +578,14 @@
                     Utiliza proteção respiratória em bom estado de conservação..
                  </td>
                 <td>
-                <input type="checkbox" name="fooby[25][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[25][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[25][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[25][]" id="idNao" value="Não">
                          <label>Não</label>
             
                  </td>
                 <td>
-                <input type="checkbox" name="fooby[25][]" id="Na">
+                <input type="checkbox" name="group[25][]" id="Na">
             </td>
             <td>
                 <input type="text" name="observacoes" id="idObs">
@@ -614,14 +614,14 @@
                     Utiliza os materiais adequados
                  </td>
                 <td>
-                <input type="checkbox" name="fooby[26][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[26][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[26][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[26][]" id="idNao" value="Não">
                          <label>Não</label>
         
                  </td>
                 <td>
-                <input type="checkbox" name="fooby[26][]" id="Na">
+                <input type="checkbox" name="group[26][]" id="Na">
             </td>
             <td>
                 <input type="text" name="observacoes" id="idObs">
@@ -636,13 +636,13 @@
                     Utiliza os equipamentos indicados
                  </td>
                 <td>
-                <input type="checkbox" name="fooby[27][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[27][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[27][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[27][]" id="idNao" value="Não">
                          <label>Não</label>
                 </td>
                 <td>
-                <input type="checkbox" name="fooby[27][]" id="Na">
+                <input type="checkbox" name="group[27][]" id="Na">
             </td>
             <td>
                 <input type="text" name="observacoes" id="idObs">
@@ -656,13 +656,13 @@
                     Utiliza as ferramentas indicadas
                  </td>
                 <td>
-                <input type="checkbox" name="fooby[28][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[28][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[28][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[28][]" id="idNao" value="Não">
                          <label>Não</label>
                 </td>
                 <td>
-                <input type="checkbox" name="fooby[28][]" id="Na">
+                <input type="checkbox" name="group[28][]" id="Na">
             </td>
             <td>
                 <input type="text" name="observacoes" id="idObs">
@@ -690,13 +690,13 @@
                             Existem ordem e limpeza na área de trabalho
                         </td>
                         <td>
-                            <input type="checkbox" name="fooby[29][]" id="idSim" value="Sim">
+                            <input type="checkbox" name="group[29][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                            <input type="checkbox" name="fooby[29][]" id="idNao" value="Não">
+                            <input type="checkbox" name="group[29][]" id="idNao" value="Não">
                          <label>Não</label>
                             </td>
                         <td>
-                        <input type="checkbox" name="fooby[29][]" id="Na">
+                        <input type="checkbox" name="group[29][]" id="Na">
                         </td>
                         <td>
                              <input type="text" name="observacoes" id="idObs">
@@ -711,13 +711,13 @@
                             Existe meio de comunicação adequado
                         </td>
                          <td>
-                            <input type="checkbox" name="fooby[30][]" id="idSim" value="Sim">
+                            <input type="checkbox" name="group[30][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                            <input type="checkbox" name="fooby[30][]" id="idNao" value="Não">
+                            <input type="checkbox" name="group[30][]" id="idNao" value="Não">
                          <label>Não</label>
                         </td>
                         <td>
-                        <input type="checkbox" name="fooby[30][]" id="Na">
+                        <input type="checkbox" name="group[30][]" id="Na">
                                                         </td>
                                                         <td>
                              <input type="text" name="observacoes" id="idObs">
@@ -731,13 +731,13 @@
                         <td>
                             Empregado encontra-se trabalhando em condições físicas <br> e psíquicas adequadas
                          <td>
-                <input type="checkbox" name="fooby[31][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[31][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[31][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[31][]" id="idNao" value="Não">
                          <label>Não</label>
                 </td>
                         <td>
-                        <input type="checkbox" name="fooby[31][]" id="Na">
+                        <input type="checkbox" name="group[31][]" id="Na">
                                                         </td>
                                                         <td>
                              <input type="text" name="observacoes" id="idObs">
@@ -750,13 +750,13 @@
                         <td>
                             Existe supervisão adequada da tarefa
                          <td>
-                <input type="checkbox" name="fooby[32][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[32][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[32][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[32][]" id="idNao" value="Não">
                          <label>Não</label>
                 </td>
                         <td>
-                        <input type="checkbox" name="fooby[32][]" id="Na">
+                        <input type="checkbox" name="group[32][]" id="Na">
                                                         </td>
                                                         <td>
                              <input type="text" name="observacoes" id="idObs">
@@ -784,13 +784,13 @@
                         <td>
                             Existe proteção completa da área de trabalho
                          <td>
-                <input type="checkbox" name="fooby[33][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[33][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[33][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[33][]" id="idNao" value="Não">
                          <label>Não</label>
                 </td>
                         <td>
-                        <input type="checkbox" name="fooby[33][]" id="Na">
+                        <input type="checkbox" name="group[33][]" id="Na">
                                                         </td>
                                                         <td>
                              <input type="text" name="observacoes" id="idObs">
@@ -804,13 +804,13 @@
                         <td>
                         Existe sinalização completa da área de trabalho
                          <td>
-                <input type="checkbox" name="fooby[34][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[34][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[34][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[34][]" id="idNao" value="Não">
                          <label>Não</label>
                 </td>
                         <td>
-                        <input type="checkbox" name="fooby[34][]" id="Na">
+                        <input type="checkbox" name="group[34][]" id="Na">
                                                         </td>
                                                         <td>
                              <input type="text" name="observacoes" id="idObs">
@@ -838,13 +838,13 @@
                                 <td>
                                     Foi identificado os riscos da atividade
                                 <td>
-                <input type="checkbox" name="fooby[35][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[35][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[35][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[35][]" id="idNao" value="Não">
                          <label>Não</label>
                 </td>
                                 <td>
-                                <input type="checkbox" name="fooby[35][]" id="Na">
+                                <input type="checkbox" name="group[35][]" id="Na">
                                 </td>
                                  <td>
                                     <input type="text" name="observacoes" id="idObs">
@@ -858,13 +858,13 @@
                                 <td>
                                     Foi realizada a conversa de 05 minutos (conversa ao pé do poste)
                                 <td>
-                <input type="checkbox" name="fooby[36][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[36][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[36][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[36][]" id="idNao" value="Não">
                          <label>Não</label>
                 </td>
                                 <td>
-                                <input type="checkbox" name="fooby[36][]" id="Na">
+                                <input type="checkbox" name="group[36][]" id="Na">
                                 </td>
                                 <td>
                                     <input type="text" name="observacoes" id="idObs">
@@ -892,13 +892,13 @@
                                         <td>
                                             Possui crachá de identificação
                                          <td>
-                <input type="checkbox" name="fooby[37][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[37][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[37][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[37][]" id="idNao" value="Não">
                          <label>Não</label>
                 </td>
                                         <td>
-                                        <input type="checkbox" name="fooby[37][]" id="Na">
+                                        <input type="checkbox" name="group[37][]" id="Na">
                                         </td>
                                         <td>
                                              <input type="text" name="observacoes" id="idObs">
@@ -912,13 +912,13 @@
                                         <td>
                                             Possui qualificação adequada para a atividade em que executa
                                          <td>
-                <input type="checkbox" name="fooby[38][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[38][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[38][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[38][]" id="idNao" value="Não">
                          <label>Não</label>
                 </td>
                                         <td>
-                                        <input type="checkbox" name="fooby[38][]" id="Na">
+                                        <input type="checkbox" name="group[38][]" id="Na">
                                         </td>
                                         <td>
                                             <input type="text" name="observacoes" id="idObs">
@@ -932,13 +932,13 @@
                                              Sabe como agir em caso de ocorrência de emergências,<br>
                                               acidentes ou incidentes do trabalho
                                          <td>
-                <input type="checkbox" name="fooby[39][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[39][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[39][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[39][]" id="idNao" value="Não">
                          <label>Não</label>
                 </td>
                                         <td>
-                                        <input type="checkbox" name="fooby[39][]" id="Na">
+                                        <input type="checkbox" name="group[39][]" id="Na">
                                         </td>
                                         <td>
                                             <input type="text" name="observacoes" id="idObs">
@@ -966,13 +966,13 @@
                                                             <td>
                                                                 O veículo utilizado para a tarefa, seus equipamentos <br> e acessórios cumprem com as <br> especificações técnicas requeridas.
                                                              <td>
-                <input type="checkbox" name="fooby[40][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[40][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[40][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[40][]" id="idNao" value="Não">
                          <label>Não</label>
                 </td>
                                                            <td>
-                                                           <input type="checkbox" name="fooby[40][]" id="Na">
+                                                           <input type="checkbox" name="group[40][]" id="Na">
                                                             </td>
                                                             <td>
                                                                 <input type="text" name="observacoes" id="idObs">
@@ -986,13 +986,13 @@
                                                             <td>
                                                                 Possui a documentação do veículo do condutor <br> exigido pelo Código de Trânsito Brasileiro.
                                                              <td>
-                <input type="checkbox" name="fooby[41][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[41][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[41][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[41][]" id="idNao" value="Não">
                          <label>Não</label>
                 </td>
                                                            <td>
-                                                           <input type="checkbox" name="fooby[41][]" id="Na">
+                                                           <input type="checkbox" name="group[41][]" id="Na">
                                                         </td>
                                                         <td>
                                                              <input type="text" name="observacoes" id="idObs">
@@ -1005,13 +1005,13 @@
                                                             <td>
                                                                 O transporte de pessoas em veículos é <br> realizado de acordo com as normas de trânsito brasileiro
                                                              <td>
-                <input type="checkbox" name="fooby[42][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[42][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[42][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[42][]" id="idNao" value="Não">
                          <label>Não</label>
                 </td>
                                                            <td>
-                                                            <input type="checkbox" name="fooby[42][]" id="Na">
+                                                            <input type="checkbox" name="group[42][]" id="Na">
                                                         </td>
                                                         <td>
                                                              <input type="text" name="observacoes" id="idObs">
@@ -1038,13 +1038,13 @@
                                 <td>
                                     O estojo de primeiro socorros está em boas condições de conservação
                                     <td>
-                <input type="checkbox" name="fooby[43][]" id="idSim" value="Sim">
+                <input type="checkbox" name="group[43][]" id="idSim" value="Sim">
                          <label>Sim</label>
-                <input type="checkbox" name="fooby[43][]" id="idNao" value="Não">
+                <input type="checkbox" name="group[43][]" id="idNao" value="Não">
                          <label>Não</label>
                 </td>
                                 <td>
-                                <input type="checkbox" name="fooby[43][]" id="Na">
+                                <input type="checkbox" name="group[43][]" id="Na">
                                 </td>
                                 <td>
                                     <input type="text" name="observacoes" id="idObs">
