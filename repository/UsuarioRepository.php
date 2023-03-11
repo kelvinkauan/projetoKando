@@ -66,7 +66,7 @@ class UsuarioRepository{
 
                 if(!$result)
                 {
-                    $msg = "Usuario ou Senha estão incorretas";
+                    $msg = print("Usuario ou Senha estão incorretas");
                 }
                 else
                 {
@@ -81,7 +81,7 @@ class UsuarioRepository{
             {
                 $e = print("Erro!");
             }
-            $this->findAll();
+            $this->findAll($msg);
 
 
         }

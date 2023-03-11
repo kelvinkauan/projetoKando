@@ -113,7 +113,9 @@
 
                 $this->loadView("PaginaPrincipal.php", $data, $msg);
             } else {
+                
                 header("Location: ./UsuarioControllor.php?action=login");
+                echo "Senha ou email incorretos";
             }
         
         }
