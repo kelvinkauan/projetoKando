@@ -37,7 +37,16 @@ class formInspecionarSecundarioRepositoy {
 
         }
 
+        public function contagemValor( $valor){
+            $query = "SELECT COUNT(valor) as c FROM etapa WHERE valor = :valor ";
+    
+            $prepare = $this->conn->prepare($query);
+            $prepare->bindValue(":valor", $valor );
+            $prepare->execute();
+            $result = $prepare->fetch(PDO::FETCH_ASSOC);
+            return $result;
 
+            }
 
 
 

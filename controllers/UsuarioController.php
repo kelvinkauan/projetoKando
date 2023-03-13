@@ -126,6 +126,8 @@
                 $usuario= $dadosUser->findUserById();
                 $data['usuario'] = $usuario; 
 
+                
+
 
                 $this->loadView("inspecao.php", $data, $msg);
             }

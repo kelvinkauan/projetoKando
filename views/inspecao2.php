@@ -4,6 +4,8 @@
 
 <head>
 <meta charset="UTF-8" >
+<link rel="stylesheet" href="../views/Styleforms/inspecao2.css" >
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -19,9 +21,18 @@
 
 
 <body>
-    <br>
-    <br>
-    <br>
+    
+    <nav>
+      <div id=" title">
+         <h1> Relatório IPAL </h1>
+      </div>
+      <ul>
+         <a class="a" href="./UsuarioController.php?action=PaginaPrincipal">
+            <li>Home</li>
+         </a>
+      </ul>
+   </nav>
+
     <div class="container">
     <table class="table " align="center" border="1" cellspacing="10"> 
         <thead class="table-light">
@@ -48,7 +59,7 @@
         </tr>
     </thead>
     <tbody>
-        <form action="../controllers/formInspecSecController.php?action=salvar" method="post">
+        <form action="../controllers/formInspecSecController.php?action=contarValor" method="post">
         <tr>
             <td>
                 1.1
@@ -283,7 +294,7 @@
             <td>
                 <textarea type="text" name="item[3][1][observacao]" id="idObs"> </textarea>
             </td>
-                <input type="hidden" name="item[3][1][nome]" value="ordemTrabalho">
+                <input type="hidden" name="item[3][1][nome]" value="3.1">
             </tr>
             <tr>
                  <td>
@@ -1171,7 +1182,7 @@
                     </tbody>
                 
                 </table>
-                <input type="submit">
+                <button class="btn btn-primary"  type="submit"> Salvar </button>
                              </form>
                 <br>   
                 

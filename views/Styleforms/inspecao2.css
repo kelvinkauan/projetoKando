@@ -1,0 +1,36 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    max-width: 1200px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: 0 auto;
+    padding: 0 auto;
+    text-decoration: none;
+    
+}
+
+
+#title{
+    flex-direction: column;
+    line-height: 10px;
+
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+    
+}
+
+.a{
+    color: black;
+    text-decoration: none;
+}
+
+.a:hover{
+    color:  #235bd3; 
+    transition: 0.3s all;
+ }

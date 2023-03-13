@@ -1,68 +1,78 @@
 <!DOCTYPE html>
-
 <html>
   <head>
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <script type="text/javascript">
-    google.charts.load("current", {packages:['corechart']});
-    google.charts.setOnLoadCallback(drawChart);
-    function drawChart() {
-      var data = google.visualization.arrayToDataTable([
-        ["Element", "Density" ]
 
-        <?php 
-          include "./connection/connection.php";
-          $sql = "SELECT * FROM etapa";
-          $consulta =mysqli_query($conn, $sql); 
-          while($dados = mysqli_fetch_array($consulta)){
-             $numero = $dados['valor'];
-            //  if($numero = 1){
-            //   return $numero;
-            //  }if($numero = 2){
-            //   return $numero;
-            //  }if($numero = 3){
-              // return $numero;
-             
-             $nome = $dados['nome'];?>
-            
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="../views/Styleforms/charts.css" >
 
-            [<?php echo $nome ?>, <?php echo $numero ?>]
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
 
-            <?php }?>
-       
-      ]);
-      
+      // Load the Visualization API and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
 
-      var view = new google.visualization.DataView(data);
-      view.setColumns([0, 1,
-                       { calc: "stringify",
-                         sourceColumn: 1,
-                         type: "string",
-                         role: "annotation" },
-                       2]);
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(drawChart);
 
-      var options = {
-        title: "Gráfico",
-        width: 600,
-        height: 400,
-        bar: {groupWidth: "95%"},
-        legend: { position: "none" },
-      };
-      var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
-      chart.draw(view, options);
-  }
-  </script>
-</head>
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
 
-<body>
-  <h1>DashBoard</h1>
-<div id="columnchart_values" style="width: 900px; height: 300px;"></div>
-sss
-</body>
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          
+          ['Sim', <?=$contSim['c']?>],
+          ['Não',  <?=$contNao['c']?>],
+          ['NA',  <?=$contNA['c']?>],
+          
+        ]);
+
+        
+
+        // Set chart options
+        var options = {'title':'Respostas Assinaladas',
+                       'width':400,
+                       'height':300,
+                       'pieHole': 0.4,
+                                              
+                      
+                      };
+                      
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+    <title>Gráfico</title>
+
+  </head>
+  
 
 
-
-
-
-
+  <body>
+  <nav>
+      <div id=" title">
+         <h1> Relatório IPAL </h1>
+      </div>
+      <ul>
+         <a class="a" href="./UsuarioController.php?action=PaginaPrincipal">
+            <li>Home</li>
+         </a>
+      </ul>
+   </nav>
+    <div class="container" >
+      <div class="subT">
+        <h3  ><p >Gráfico</p></h3>
+        </div>
+    
+      <div  class="chart "id="chart_div"></div>
+    
+   </div>
+  </body>
 </html>

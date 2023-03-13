@@ -74,10 +74,7 @@
                     $formRepository = new formInspecionarSecundarioRepositoy;
             
                     $id = $formRepository -> salvar($model);
-                    if($id){
-                        
 
-                    }
 
                 }
 
@@ -87,10 +84,21 @@
         }
 
      
+        public function contarValor(){
+            $form = new formInspecionarSecundarioRepositoy;
+            $valor = 1 ;
+            $value = 2;
+            $val = 3;
+            $contSim = $form ->contagemValor($valor);
+            $contNao = $form ->contagemValor($value); 
+            $contNa = $form ->contagemValor($val); 
 
+            // var_dump($contSim , $contNao, $contNa);
+            
+           $this->loadView("charts.php", compact('contSim','contNao', 'contNa'));
+        }
 
     
-
         
 
 
