@@ -84,7 +84,7 @@
 
             if($id){
                 $this->loadView("inspecao2.php");
-              echo"cadastrado";
+              
             }
 
         }

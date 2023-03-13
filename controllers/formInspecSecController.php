@@ -59,7 +59,13 @@
 
 
         public function Salvar(){
-          
+            $form = new formInspecionarSecundarioRepositoy;
+            $valor = 1 ;
+            $value = 2;
+            $val = 3;
+            $contSim = $form ->contagemValor($valor);
+            $contNao = $form ->contagemValor($value); 
+            $contNa = $form ->contagemValor($val); 
 
             foreach($_POST["item"] as $etapa => $infoSubEtapa){
                 foreach($infoSubEtapa as $subEtapa => $info){
@@ -74,12 +80,13 @@
                     $formRepository = new formInspecionarSecundarioRepositoy;
             
                     $id = $formRepository -> salvar($model);
-
-
                 }
 
             }
-
+            if( $id){
+                $this->loadView("charts.php", compact('contSim','contNao', 'contNa'));
+            }
+        
 
         }
 
