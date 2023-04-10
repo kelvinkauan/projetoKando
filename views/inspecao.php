@@ -31,7 +31,7 @@
     <div class="form-header">
     <h2 > Nova Inspeção </h2> 
     </div>
-    <p>Informações gerais</p>
+    <!-- <p>Informações gerais</p> -->
     <div class="input-group">
 
     <div class="input-box">

@@ -3,8 +3,10 @@
     ini_set('display_errors', 1);
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL);
-
+    require_once __DIR__."/../models/formInspecModel.php";
+    require_once __DIR__."/../repository/formInspecRepository.php";
     require_once __DIR__ ."/../repository/formInspecSecRepository.php";
+    require_once __DIR__."/../repository/UsuarioRepository.php";
 
      $form = new formInspecSecController();
 
@@ -57,8 +59,9 @@
           
         }
 
+        
 
-        public function Salvar(){
+        private function Salvar(){
             $form = new formInspecionarSecundarioRepositoy;
             $valor = 1 ;
             $value = 2;
@@ -66,6 +69,12 @@
             $contSim = $form ->contagemValor($valor);
             $contNao = $form ->contagemValor($value); 
             $contNa = $form ->contagemValor($val); 
+
+                $dados = new formInspecionarRepositoy;
+                $dadosModel =$dados->takeFormById();
+                $data['formulario'] = $dadosModel;
+
+           
 
             foreach($_POST["item"] as $etapa => $infoSubEtapa){
                 foreach($infoSubEtapa as $subEtapa => $info){
@@ -84,7 +93,7 @@
 
             }
             if( $id){
-                $this->loadView("charts.php", compact('contSim','contNao', 'contNa'));
+                $this->loadView("charts.php", compact('contSim','contNao', 'contNa','data'));
             }
         
 
@@ -102,9 +111,10 @@
 
             // var_dump($contSim , $contNao, $contNa);
             
-           $this->loadView("charts.php", compact('contSim','contNao', 'contNa'));
+            $this->loadView("charts.php", compact('contSim','contNao', 'contNa'));
         }
-
+        
+        
     
         
 

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="https://form$formn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="../views/Styleforms/charts.css">
 
   <!--Load the AJAX API-->
@@ -72,18 +73,56 @@
       </a>
     </ul>
   </nav>
+  <?php 
+  if(isset($data['data']))
+  foreach($data['data'] as $form):  ?>
+  <div class="container-info">
+  <div class="info">
+ 
+  <div class="data">
+    <p>
+    <label for=""> Nº O.S: </label>
+    <?= $form['NOS'] ?>
+    </p>
+  </div>
+  <div>
+    <p>
+  <label for=""> Empresa: </label>
+  <?= $form['empresa'] ?>
+  </p>
+  </div>
+  <div>
+    <p>
+  <label for=""> Data: </label>
+  <?= $form['data_form'] ?>
+  </p>
+  </div>
+  <div>
+    <p>
+  <label for="">Reponsável pelo serviço: </label>
+  <?= $form['responsavel'] ?>
+  </p>
+  </div>
+  </div>
+  </div>
+
+  <?php endforeach; ?>
+
+
   <div class="container">
     <div class="subT">
       <h3>
-        <p>Gráfico</p>
+        Gráfico
       </h3>
     </div >
     
-    <div class="container">
-      <div class="chart" id="chart_div"></div>
+    <div class="chart">
+      <div id="top_x_div" style="width: 100px; height: 500px;"></div>
     </div>
  
 
+
+    
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
       google.charts.load('current', {'packages':['bar']}, {packages:['corechart']});
@@ -93,7 +132,7 @@
         var data = google.visualization.arrayToDataTable([
           ['', 'NC', { role: "style" } ],
           
-         ['NA',  <?= $data['contNao']['c']  ?>, '#b87333']
+         ['NA',  <?= $data['contNa']['c']  ?>, '#b87333']
          
         ]);
 
@@ -111,9 +150,44 @@
         chart.draw(data, google.charts.Bar.convertOptions(options));
       }
     </script>
-    <div class="container">
-      <div   style="margin:auto; width: 77px; height: 500px;" id="columnchart_material" ></div>
+    <div class="container" >
+      <div   style="margin:auto; width: 77px; height: 500px;padding-top: 89px; " id="columnchart_material" ></div>
     </div>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawStuff);
+
+      function drawStuff() {
+        var data = new google.visualization.arrayToDataTable([
+          ['Move', 'Percentage' ],
+          
+        ['Sim', <?= $data['contSim']['c'] ?>],
+        ['Não', <?= $data['contNao']['c'] ?>],
+        ['NA',  <?= $data['contNa']['c']  ?>],
+        ]);
+
+        var options = {
+          width: 500,
+          legend: { position: 'none' },
+          chart: {
+            title: '',
+            subtitle: '' },
+          axes: {
+            x: {
+              0: { side: 'top', label: 'White to move'} // Top x-axis.
+            }
+          },
+          bar: { groupWidth: "90%" }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('top_x_div'));
+        // Convert the Classic options to Material options.
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      };
+    </script>
+
+   
 </body>
 
 </html>

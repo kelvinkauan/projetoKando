@@ -59,7 +59,9 @@
         </tr>
     </thead>
     <tbody>
+            
         <form action="../controllers/formInspecSecController.php?action=Salvar" method="post">
+        
         <tr>
             <td>
                 1.1

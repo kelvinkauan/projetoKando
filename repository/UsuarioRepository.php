@@ -95,16 +95,23 @@ class UsuarioRepository{
 
             if(($prepare) and ($prepare->rowCount() !=0)){
                 $row = $prepare ->fetch(PDO::FETCH_ASSOC);  
-        return $row;
-          
-
+            return $row;  
+            }
         }
-    
+ 
+
+
+        public function findFormById():array{
+            $query = "SELECT*FROM formulario WHERE idUsuario = :id LIMIT 1";
+            $prepare = $this->conn->prepare($query);    
+            $prepare->bindParam(":id", $_SESSION['User'], PDO::PARAM_INT);
+            $prepare->execute();
+            return $prepare->fetchAll(PDO::FETCH_ASSOC);
+
+        
 
     }
-
-
-
+    
 
     }
 

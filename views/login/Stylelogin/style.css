@@ -45,7 +45,7 @@ a {
 	margin: 15px 0;
 }
 
-.button {
+button {
 	border-radius: 20px;
 	border: 1px solid #235bd3;
 	background-color: transparent;
@@ -59,15 +59,15 @@ a {
 	border-color: #235bd3;
 }
 
-.button:active {
+button:active {
 	transform: scale(0.95);
 }
 
-.button:focus {
+button:focus {
 	outline: none;
 }
 
-.button:hover{
+button:hover{
     background-color: #235bd3;
 	color: white;
 }
@@ -166,7 +166,7 @@ input {
 .overlay {
 	background: #F2eee3;
 	background: -webkit-linear-gradient(to right, #F2eee3, #c4b4d6);
-	background: linear-gradient(to right, #235bd3, #235bd3);
+	background: linear-gradient(to right, #a1b5e0, #235bd3);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;

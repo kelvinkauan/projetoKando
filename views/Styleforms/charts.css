@@ -61,8 +61,8 @@ body {
 
 .container {
     width: auto;
-    margin-left: -66px;
-    margin-right: -135px;
+    margin-left: -57px;
+    margin-right: 695px;
     margin-block: auto;
     width: auto;
     height: auto;
@@ -97,8 +97,8 @@ h3 {
 }
 
 .chart {
-    margin-right: 50cm;
-    padding-top: 5%;
+    margin-right: 16cm;
+    padding-top: 10%;
     padding-left: 30%;
 
 }
@@ -110,4 +110,37 @@ h3 {
     width: 500px;
     height: 500px;
 
+}
+.container-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 5px;
+    margin: 0;
+    padding: auto;
+    /* background-color: #fff; */
+    width: auto;
+  }
+  .info{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    width: 30vw;
+    height: auto;
+    background-color: #fff;
+    flex-direction: column;
+    border: 3px solid #235bd3;
+    border-radius: 5px;
+    
+  }
+  p{
+    margin-left: 6em;
+    padding: 10px;
+    /* justify-content: space-between; */
+    justify-content: flex-start;
+   
+  }
+  .data{
+    flex-direction: column;
 }

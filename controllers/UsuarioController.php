@@ -108,26 +108,24 @@
                
                 $dadosUser = new UsuarioRepository();
                 $usuario= $dadosUser->findUserById();
-                $data['usuario'] = $usuario; 
+                $data['usuario'] = $usuario;
+                 
 
 
                 $this->loadView("PaginaPrincipal.php", $data, $msg);
             } else {
                 
-                header("Location: ./UsuarioControllor.php?action=login");
+                header("Location: ./UsuarioController.php?action=login");
                 echo "Senha ou email incorretos";
             }
         
-        }
+        } 
         private function CarregarForm(string $msg =null){
 
             if($_SESSION["Logado"] == true){
                 $dadosUser = new UsuarioRepository();
                 $usuario= $dadosUser->findUserById();
                 $data['usuario'] = $usuario; 
-
-                
-
 
                 $this->loadView("inspecao.php", $data, $msg);
             }

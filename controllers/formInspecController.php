@@ -4,6 +4,8 @@
     error_reporting(E_ALL);
 
     require_once __DIR__ ."/../repository/formInspecRepository.php";
+    require_once __DIR__."/../repository/UsuarioRepository.php";
+
 
      $form = new formInspecController();
 
@@ -90,6 +92,18 @@
         }
 
 
+        private function MostrarDados(){
+            $model = new FormInspecionarModel;
+            $model -> setIdFormulario($_GET['id']);
+            $formRepository = new formInspecionarRepositoy();
+            $data['dados_form'] = $formRepository->Show($model); 
+            $this->loadView("charts.php", $data);
+        }
+
+        
+        
+        
+       
 
 
 

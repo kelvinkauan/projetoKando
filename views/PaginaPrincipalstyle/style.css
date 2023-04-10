@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+/* @import url('https://fonts.googleapis.com/css?family=Arial:400,800'); */
 
 body{
 
@@ -71,10 +71,13 @@ display:none;
 }
 .div-btn{
     width: 300px;
-    margin: 0 auto;
+    margin: 586px;
+    margin-block: auto;
 }
+
 @media only screen and (max-width: 330px) {
     .div-btn {
         width: 3000px;
+        
     }
 }

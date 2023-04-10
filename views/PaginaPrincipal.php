@@ -67,7 +67,7 @@
         <a href="#">
             <li>Frota</li>
         </a>
-        <a href="#">
+        <a href="../controllers/formInspecSecController.php?action=contarValor">
             <li>Power BI</li>
         </a>
         <a href="#">
@@ -94,7 +94,7 @@
 
 
 
-<h1 align="center">Sistema de Gestão de Controle</h1>
+<h1 align="center">SESMT Digital</h1>
 <div class="div-btn">
 <button class="btn"   id="btn" >
     Android
